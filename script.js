@@ -24,8 +24,10 @@ for (let i = 0; i < buttons.length; i++) {
 
     count--;
     text.innerText = `You have ${count} chances `;
-    if(count <= 0)
+    if(count <= 0){
     text.innerText = `Game Over`;
+    text.style.color = "red";
+    }
   });
 };
 
